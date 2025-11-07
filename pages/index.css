@@ -181,3 +181,126 @@
   display: flex;
   justify-content: space-between;
 }
+
+.reservation {
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #d9e7ff;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.reservation__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0 auto 80px;
+  padding: 0px;
+}
+
+.reservation__form {
+  display: flex;
+}
+
+.form {
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  max-width: 385px;
+  border: 0;
+}
+
+.form__label {
+  padding-bottom: 8px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form__input {
+  width: 385px;
+  height: 60px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  margin-bottom: 32px;
+}
+
+.form__button {
+  border-radius: 4px;
+  height: 60px;
+  width: 385px;
+  background-color: #2f80ed;
+  margin-bottom: 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+
+.form__button .input__placeholder {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+}
+
+.form__button:hover {
+  opacity: 0.7;
+}
+
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__checkbox-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: transparent;
+  position: relative;
+  border: 2px solid #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__checkbox-input:checked {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.form__checkbox-input :checked::after {
+  content: "✔";
+  color: #2f80ed;
+}
